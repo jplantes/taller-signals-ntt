@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { SignalsComponent } from './componentes/signals/signals.component';
+import { ToSignalsComponent } from './componentes/to-signals/to-signals.component';
+import { UpdateComponent } from './componentes/update/update.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ SignalsComponent, ToSignalsComponent, UpdateComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'tallerSignals';
+
 }
